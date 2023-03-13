@@ -4,15 +4,15 @@ import Header from "../Header/Header";
 import img1 from "../../images/Ellipse 22.png";
 import SupportCard from "../Cards/SupportCard";
 import Footer from "../Footer/Footer";
+import Curated from "../../images/Curated.png";
 
 const Support = () => {
   return (
-    <div>
+    <div className="">
       <Header />
-      <div className="relative mx-20 py-20 h-[720px]">
-        <img className="absolute -left-20 -top-24" src={img1} />
-        <div className=" absolute w-[35vw]">
-          <p className="text-[40px] bespoke dark:text-white text-black">
+      <div className="bg-gradient-to-r from-teal-100 via-blue-400 to-blue-400 dark:bg-gradient-to-r  dark:from-blue-900 dark:to-teal-800  pt-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
+        <div className="relative max-w-[400px] p-4 sm:p-0">
+          <p className="text-[40px] my-4 bespoke font-bold dark:text-white text-black">
             Raise Support
           </p>
           <p className="text-[16px] mt-6 ranade dark:text-white text-black">
@@ -30,31 +30,48 @@ const Support = () => {
           </p>
 
           <div className="flex text-[16px]">
-            <button className=" px-6 py-2 border border-white rounded-lg bg-gradient-to-r from-green-300 to-blue-800">
+            <button className="px-8 py-2 border border-white rounded-lg bg-gradient-to-r from-green-300 to-blue-800">
               List your Business for Free
             </button>
           </div>
         </div>
-        <div></div>
+        <div className="w-[600px] -mt-12">
+          <img src={Curated} alt="" />
+        </div>
       </div>
 
-      <div className="flex border border-slate-700 text-[25px] mx-20 mb-12 rounded-lg p-6 bg-[#FFFFFF] dark:bg-slate-900 justify-between items-center">
-        <div className="mx-16  dark:text-white text-[#606060]">
+      <div className=" mx-10 mt-8 flex flex-wrap justify-center py-4 rounded-md bg-gray-800">
+        <div
+          className="mx-16  dark:text-white text-[#606060] text-xl p-2"
+          style={{ fontFamily: "Bespoke Sans" }}
+        >
           Capital Raise Support
         </div>
-        <div className="mx-16 dark:text-white text-[#606060]">
+        <div
+          className="mx-16 dark:text-white text-[#606060] text-xl p-2"
+          style={{ fontFamily: "Bespoke Sans" }}
+        >
           Deal making/Capital raise
         </div>
       </div>
 
-      <section className="flex justify-evenly pb-36">
-        <SupportCard />
-        <SupportCard />
-        <SupportCard />
-        <SupportCard />
-      </section>
-
-      <Footer />
+      <div className="w-full flex justify-evenly flex-wrap">
+        <div className="mt-16">
+          <SupportCard />
+        </div>
+        <div className="mt-16">
+          <SupportCard />
+        </div>
+        <div className="mt-16">
+          <SupportCard />
+        </div>
+        <div className="mt-16">
+          <SupportCard />
+        </div>
+      </div>
+      <div className="mt-8">
+        <Footer />
+      </div>
     </div>
   );
 };
