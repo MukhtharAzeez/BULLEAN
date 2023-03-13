@@ -7,7 +7,7 @@ import Support from "./pages/Support";
 
 function App() {
   return (
-    <div className="overflow-hidden w-full pb-[1px] ranade pt-6  bg-white  dark:bg-gradient-to-b from-[#141F5E] to-[#03040C]  text-white">
+    <div className="overflow-hidden w-full pb-[1px] ranade  bg-white  dark:bg-gradient-to-b from-[#141F5E] to-[#03040C]  text-white">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />

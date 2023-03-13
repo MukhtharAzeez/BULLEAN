@@ -3,16 +3,13 @@ import React from "react";
 import Header from "../Header/Header";
 import leftfade from "../../images/Ellipse 22.png";
 import rightfade from "../../images/Vector 9.png";
-import arrowimg from "../../images/freepik--Arrow--inject-14.png";
-import manimg from "../../images/freepik--character-2--inject-14.png";
-import rocket from "../../images/freepik--Rocket--inject-7.png";
 import img1 from "../../images/Group 14.png";
 import bucket from "../../images/Vector.png";
 import txt1 from "../../images/Advising.png";
 import txt2 from "../../images/Consulting.png";
 import txt3 from "../../images/Investment Banking.png";
 import txt4 from "../../images/Investments.png";
-import img2 from "../../images/image 33.png";
+import investor from "../../images/investor.png";
 import Card1 from "../Cards/Card1";
 import p1 from "../../images/p1.png";
 import p2 from "../../images/p2.png";
@@ -24,13 +21,10 @@ import t2 from "../../images/Mask group-1.png";
 import t3 from "../../images/Mask group-2.png";
 import t4 from "../../images/Mask group-3.png";
 import img3 from "../../images/image 13.png";
-import img4 from "../../images/Vector 16.png";
 import img5 from "../../images/glow.png";
-import logo from "../../images/Bullean.png";
 import Card2 from "../Cards/Card2";
 import Footer from "../Footer/Footer";
 import homeImage from "../../images/homeImage.png";
-
 
 function Home() {
   return (
@@ -180,7 +174,7 @@ function Home() {
           </button>
         </div>
         <div>
-          <img src={img2} />
+          <img src={investor} alt="" />
         </div>
       </section>
 
@@ -347,9 +341,7 @@ function Home() {
           />
         </div>
       </section>
-      <div className="pt-[240px] ">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
