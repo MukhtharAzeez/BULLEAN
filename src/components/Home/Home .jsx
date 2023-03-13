@@ -29,50 +29,46 @@ import img5 from "../../images/glow.png";
 import logo from "../../images/Bullean.png";
 import Card2 from "../Cards/Card2";
 import Footer from "../Footer/Footer";
+import homeImage from "../../images/homeImage.png";
+
 
 function Home() {
   return (
     <div className="w-full z-40">
       <Header />
       {/* Hero Section */}
-      <div className="relative w-full h-[100vh]">
-        <div className=" absolute top-32 left-12 z-10">
-          <p className="text-[61px] font-[700] bespoke dark:text-white text-black">
-            Build your Future <br /> With Investments
-          </p>
-          <p className="text-[16px] font-[400] my-4 dark:text-white text-black">
-            We are world wide investment company who are <br />
-            committed to the principle of revenue maximitization & <br />
-            reduction of the financial risks at investing.
-          </p>
-          <button className=" px-16 py-2 border border-white rounded-lg bg-gradient-to-r from-green-300 to-blue-800">
-            Find
-          </button>
-          <p className="my-4 text-[16px] dark:text-white text-black">
-            Find the right buyers for your business
-          </p>
+      <div className="flex flex-col md:flex-row ">
+        <div className="relative w-full h-[100vh]">
+          <div className=" absolute top-32 left-4 sm:left-12 z-10">
+            <p className="text-[61px] font-[500] sm:font-[700] bespoke dark:text-white text-black">
+              Build your Future <br /> With Investments
+            </p>
+            <p className="text-[16px] font-[400] my-4 dark:text-white text-black">
+              We are world wide investment company who are <br />
+              committed to the principle of revenue maximitization & <br />
+              reduction of the financial risks at investing.
+            </p>
+            <button className=" px-16 py-2 border border-white rounded-lg bg-gradient-to-r from-green-300 to-blue-800">
+              Find
+            </button>
+            <p className="my-4 text-[16px] dark:text-white text-black">
+              Find the right buyers for your business
+            </p>
+          </div>
         </div>
         <img className="absolute -top-24 left-0" src={leftfade} />
-        <img
-          className="relative z-10 top-56 -right-96  w-[90vh] ml-[16%] "
-          src={arrowimg}
-        />
-        <img
-          className="ml-[81%] z-30 w-[8vw] absolute bottom-[56%]"
-          src={rocket}
-        />
-        <img
-          className="ml-[60%] z-10 absolute bottom-[31%] w-[39vh]"
-          src={manimg}
-        />
-        <img className="absolute -top-24 left-0" src={rightfade} />
+        <img className="absolute -top-24 left-0 w-full" src={rightfade} />
+        <div className=" z-10 flex justify-center items-center lg:pr-28">
+          <img src={homeImage} alt="" className="h-[480px] w-[850px]" />
+        </div>
       </div>
 
+      {/* Why Us */}
       <div className="text-center flex flex-col items-center ">
         <p className="text-[34px] mb-3 font-semibold bespoke dark:text-white text-black">
           Why us?
         </p>
-        <p className="w-[600px] text-[16px] dark:text-white text-black">
+        <p className="max-w-[600px] text-[16px] dark:text-white text-black">
           We are 100% funded from our own platform with a team of over 300
           professional FinTech investors who all believe the future of finance
           looks very different from today. Their experience and background
@@ -88,7 +84,7 @@ function Home() {
           <p className="my-8 text-[40px] bespoke font-semibold dark:text-white text-black ">
             Our Servises
           </p>
-          <div className="w-[700px] text-[16px] mb-3 dark:text-white text-black">
+          <div className="max-w-[700px] text-[16px] mb-3 dark:text-white text-black">
             Economic services provided by the finance industry, which
             encompasses a broadrange of businesses that manage money, including
             credit unions.
@@ -96,7 +92,8 @@ function Home() {
         </div>
       </div>
 
-      <section className="ml-8 flex rounded-l-lg bg-[#BFBFBF] dark:bg-[#1B2037]">
+      {/* Our Services */}
+      <section className="ml-8 flex rounded-l-lg bg-[#BFBFBF] dark:bg-[#171e3e]">
         <div className="w-full p-6">
           <div className="p-3 rounded-full bg-gradient-to-l from-green-300 to-blue-600 w-fit">
             <img src={bucket} />
@@ -104,7 +101,7 @@ function Home() {
           <p className="my-3 text-[26px] bespoke font-semibold dark:text-white text-black">
             Business planning
           </p>
-          <p className="w-[650px] my-4 text-[16px] dark:text-white text-black">
+          <p className="max-w-[650px] my-4 text-[16px] dark:text-white text-black">
             We are 100% funded from our own platform with a team of over 300
             professional FinTech investors who all believe the future of finance
             looks very different from today. Their experience and background
@@ -128,132 +125,40 @@ function Home() {
         </div>
       </section>
 
+      {/* Business Listing */}
       <section className=" w-[100vw] mt-32 text-[16px]  bg-[#BFBFBF] dark:bg-[#232945] flex flex-col justify-center items-center">
         <p className="mt-12 my-4 text-[36px] bespoke font-bold dark:text-white text-black">
           Business Listing
         </p>
-        <p className="mb-16 dark:text-white text-black">
+        <p className="dark:text-white text-black">
           We are the industry leader in establishing an innovation-friendly
           organization, developing new <br /> business models and new
           products.The company is on the cutting edge of new technologies.
         </p>
         <img className="absolute -top-24 left-0" src={rightfade} />
-        {/* Carosoul1 */}
 
-        <div
-          id="carouselExampleControls"
-          className="relative w-full"
-          data-te-carousel-init
-          data-te-carousel-slide
-        >
-          <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-            <div
-              className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-              data-te-carousel-active
-            >
-              {/* Custom code */}
-              {/* corousel content */}
-              <div className="flex flex-col items-center">
-                <div className="w-full flex justify-evenly">
-                  <Card1 />
-                  <Card1 />
-                  <Card1 />
-                </div>
-              </div>
-            </div>
-            <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              {/* Custom code */}
-              {/* corousel content */}
-              <div className="flex flex-col items-center">
-                <div className="w-full flex justify-evenly">
-                  <Card1 />
-                  <Card1 />
-                  <Card1 />
-                </div>
-              </div>
-            </div>
-            <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              {/* Custom code */}
-              {/* corousel content */}
-              <div className="flex flex-col items-center">
-                <div className="w-full flex justify-evenly">
-                  <Card1 />
-                  <Card1 />
-                  <Card1 />
-                </div>
-              </div>
-            </div>
+        <div className="w-full flex justify-evenly flex-wrap">
+          <div className="mt-16">
+            <Card1 />
           </div>
-          <div className="flex justify-center items-center">
-            <button className="mx-auto font-semibold px-8 py-2 my-12 bg-gradient-to-r from-green-300 to-blue-600 rounded-xl border">
-              See all Business
-            </button>
+          <div className="mt-16">
+            <Card1 />
           </div>
+          <div className="mt-16">
+            <Card1 />
+          </div>
+        </div>
 
-          <button
-            className="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-            type="button"
-            data-te-target="#carouselExampleControls"
-            data-te-slide="prev"
-          >
-            <span className="inline-block h-8 w-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Previous
-            </span>
-          </button>
-          <button
-            className="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-            type="button"
-            data-te-target="#carouselExampleControls"
-            data-te-slide="next"
-          >
-            <span className="inline-block h-8 w-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Next
-            </span>
+        <div className="flex justify-center items-center">
+          <button className="mx-auto font-semibold px-8 py-2 my-12 bg-gradient-to-r from-green-300 to-blue-600 rounded-xl border">
+            See all Business
           </button>
         </div>
       </section>
 
-      <section className="py-32 flex justify-evenly bg-white dark:bg-[#080C23]">
-        <div className="w-[30vw]">
+      {/* Get In Touch */}
+      <section className="py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
+        <div className="max-w-[400px] p-4 sm:p-0">
           <p className="text-[40px] my-4 bespoke font-bold dark:text-white text-black">
             If you are an investor
           </p>
@@ -278,11 +183,13 @@ function Home() {
           <img src={img2} />
         </div>
       </section>
+
+      {/* Our Partners */}
       <section className="text-center  bg-[#BFBFBF] dark:bg-[#050715] py-12">
         <p className="text-[40px] bespoke font-bold dark:text-white text-black">
           Our partners
         </p>
-        <div className="flex justify-evenly">
+        <div className="flex flex-wrap justify-evenly">
           <img src={p1} />
           <img src={p2} />
           <img src={p3} />
@@ -292,142 +199,25 @@ function Home() {
         <img className="absolute -top-24 left-0" src={rightfade} />
       </section>
 
+      {/* Transaction Details */}
       <section className=" pt-12 pb-32 text-center flex flex-col items-center">
         <p className="text-[40px] mt-12 bespoke font-bold dark:text-white text-black">
           Transaction details
         </p>
-        <p className="text-[14px] mt-6 mb-12 w-[480px] dark:text-white text-black">
+        <p className="text-[14px] mt-6 mb-12 max-w-[480px] dark:text-white text-black">
           The information about a transaction that is able to be reviewed from
           multiple reports like Transaction Summary or Reconciliation reports.
         </p>
-
-        {/* Carosoul2 */}
-        <div
-          id="carouselExampleIndicators"
-          className="relative w-full"
-          data-te-carousel-init
-          data-te-carousel-slide
-        >
-          <div
-            className="invisible absolute right-0 bottom-0 left-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
-            data-te-carousel-indicators
-          >
-            <button
-              type="button"
-              data-te-target="#carouselExampleIndicators"
-              data-te-slide-to="0"
-              data-te-carousel-active
-              className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-te-target="#carouselExampleIndicators"
-              data-te-slide-to="1"
-              className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-te-target="#carouselExampleIndicators"
-              data-te-slide-to="2"
-              className="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-              aria-label="Slide 3"
-            ></button>
+        <div className="w-full flex justify-evenly flex-wrap">
+          <div className="mt-16">
+            <Card2 />
           </div>
-          <div className="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
-            <div
-              className="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-              data-te-carousel-active
-            >
-              {/* custome code */}
-              {/* Carosoul2 element */}
-              <div className="flex justify-evenly w-full">
-                <Card2 />
-                <Card2 />
-                <Card2 />
-              </div>
-            </div>
-            <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              {/* custome code */}
-              {/* Carosoul2 element */}
-              <div className="flex justify-evenly w-full">
-                <Card2 />
-                <Card2 />
-                <Card2 />
-              </div>
-            </div>
-            <div
-              className="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-              data-te-carousel-item
-            >
-              {/* custome code */}
-              {/* Carosoul2 element */}
-              <div className="flex justify-evenly w-full">
-                <Card2 />
-                <Card2 />
-                <Card2 />
-              </div>
-            </div>
+          <div className="mt-16">
+            <Card2 />
           </div>
-          <button
-            className="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-            type="button"
-            data-te-target="#carouselExampleIndicators"
-            data-te-slide="prev"
-          >
-            <span className="inline-block h-8 w-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M15.75 19.5L8.25 12l7.5-7.5"
-                />
-              </svg>
-            </span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Previous
-            </span>
-          </button>
-          <button
-            className="absolute top-0 bottom-0 right-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
-            type="button"
-            data-te-target="#carouselExampleIndicators"
-            data-te-slide="next"
-          >
-            <span className="inline-block h-8 w-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="1.5"
-                stroke="currentColor"
-                className="h-6 w-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
-                />
-              </svg>
-            </span>
-            <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-              Next
-            </span>
-          </button>
-          <img className="absolute -top-24 left-0 -z-10" src={rightfade} />
+          <div className="mt-16">
+            <Card2 />
+          </div>
         </div>
       </section>
 
@@ -441,45 +231,48 @@ function Home() {
           you.Meet the financial and marketing specialists.
         </p>
         <div className="flex justify-evenly">
-          <div>
-            <img src={t1} />
-            <p className="text-[20px] my-1 dark:text-white text-black">
-              Mathew N.Jonson
-            </p>
-            <p className="text-[13px] text-green-400  ">Business consultant</p>
-          </div>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div>
+              <img src={t1} />
+              <p className="text-[20px] my-1 dark:text-white text-black">
+                Mathew N.Jonson
+              </p>
+              <p className="text-[13px] text-green-400  ">
+                Business consultant
+              </p>
+            </div>
 
-          <div>
-            <img src={t2} />
-            <p className="text-[20px] my-1 dark:text-white text-black">
-              Mathew N.Jonson
-            </p>
-            <p className="text-[13px] text-green-400">Business consultant</p>
-          </div>
+            <div>
+              <img src={t2} />
+              <p className="text-[20px] my-1 dark:text-white text-black">
+                Mathew N.Jonson
+              </p>
+              <p className="text-[13px] text-green-400">Business consultant</p>
+            </div>
 
-          <div>
-            <img src={t3} />
-            <p className="text-[20px] my-1 dark:text-white text-black">
-              Mathew N.Jonson
-            </p>
-            <p className="text-[13px] text-green-400">Business consultant</p>
-          </div>
+            <div>
+              <img src={t3} />
+              <p className="text-[20px] my-1 dark:text-white text-black">
+                Mathew N.Jonson
+              </p>
+              <p className="text-[13px] text-green-400">Business consultant</p>
+            </div>
 
-          <div>
-            <img src={t4} />
-            <p className="text-[20px] my-1 dark:text-white text-black">
-              Mathew N.Jonson
-            </p>
-            <p className="text-[13px] text-green-400">Business consultant</p>
+            <div>
+              <img src={t4} />
+              <p className="text-[20px] my-1 dark:text-white text-black">
+                Mathew N.Jonson
+              </p>
+              <p className="text-[13px] text-green-400">Business consultant</p>
+            </div>
           </div>
         </div>
       </section>
 
       {/* testimonial */}
-      <section className="relative w-full h-[1100px]">
-        <img className="absolute bottom-0 pt-32" src={img4} />
-
-        <div className="absolute w-full">
+      <section className="relative w-full">
+        {/* <img className="absolute bottom-0 pt-32" src={img4} />; */}
+        <div className=" w-full">
           <div className="text-center my-[120px]">
             <p className="text-[40px] bespoke font-bold dark:text-white text-black">
               Testimonials
@@ -489,9 +282,9 @@ function Home() {
               have been <br />
               effectivelyused in marketing for as long as marketing exists.
             </p>
-            <div className="flex justify-center items-center py-6">
+            <div className="flex flex-wrap justify-center items-center py-6">
               {/* card */}
-              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center">
+              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center mb-4">
                 <img className="rounded-full" src={img3} />
                 <div className="bg-green-500 w-[100px] h-[1px]" />
                 <p className="text-[16px] dark:text-white text-black ">
@@ -505,7 +298,7 @@ function Home() {
               </div>
 
               {/* card */}
-              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center">
+              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center mb-4">
                 <img className="rounded-full" src={img3} />
                 <div className="bg-green-500 w-[100px] h-[1px]" />
                 <p className="text-[16px] dark:text-white text-black">
@@ -519,7 +312,7 @@ function Home() {
               </div>
 
               {/* card */}
-              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center">
+              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center mb-4">
                 <img className="rounded-full" src={img3} />
                 <div className="bg-green-500 w-[100px] h-[1px]" />
                 <p className="text-[16px] dark:text-white text-black">
@@ -533,7 +326,7 @@ function Home() {
               </div>
 
               {/* card */}
-              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center">
+              <div className="w-[285px] h-[358px] mx-2 border border-slate-500 rounded-xl flex flex-col justify-evenly items-center mb-4">
                 <img className="rounded-full" src={img3} />
                 <div className="bg-green-500 w-[100px] h-[1px]" />
                 <p className="text-[16px] dark:text-white text-black">
@@ -548,13 +341,15 @@ function Home() {
             </div>
           </div>
 
-          <Footer />
           <img
             className="absolute w-[680px] h-[680px] -top-52 -left-56 "
             src={img5}
           />
         </div>
       </section>
+      <div className="pt-[240px] ">
+        <Footer />
+      </div>
     </div>
   );
 }

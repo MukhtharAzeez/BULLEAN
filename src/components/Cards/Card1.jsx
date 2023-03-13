@@ -4,8 +4,8 @@ import img2 from "../../images/peter-england-logo 2.png";
 const Card1 = () => {
   return (
     <div>
-      <div className="bg-white  dark:bg-[#2B2D37] border border-slate-600 w-[340px] rounded-lg p-3">
-        <img className="" src={img2}></img>
+      <div className="bg-white  dark:bg-[#2B2D37] border border-slate-600 max-w-[340px] rounded-lg p-3">
+        <img className="" src={img2} alt=""></img>
         <p className="font-semibold dark:text-white text-black">
           Peter England (ABFRL), Established in 1997, 1000 Franchisees, Mumbai
           Headquartered

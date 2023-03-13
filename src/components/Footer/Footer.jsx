@@ -3,31 +3,30 @@ import img2 from "../../images/Vector 16.png";
 
 const Footer = () => {
   return (
-    <div className="relative h-[280px] w-full">
-      <footer className="absolute z-10 bottom-0  w-full footerbg p-16 flex justify-center items-center">
-        <div className="mx-12 dark:text-white text-black">
-          <div>Home</div>
-          <div className="my-2">Why us</div>
-          <div>Services</div>
+    <div className="relative w-full ">
+      <footer className="h-[400px] sm:h-auto absolute z-10 bottom-0  w-full footerbg p-16 flex flex-wrap justify-evenly items-center gap-5 sm:gap-16">
+        <div className="dark:text-white text-black flex flex-col w-[140px] h-[100px]">
+          <span>Home</span>
+          <span>Why Us</span>
+          <span>Services</span>
         </div>
-        <div className="mx-12 dark:text-white text-black">
-          <div>Constact us</div>
-          <div className="my-2 dark:text-white text-black">
-            Transaction Details
-          </div>
-          <div>Testimonials</div>
+        <div className="dark:text-white text-black flex flex-col  w-[140px] h-[100px]">
+          <span>Contact Us</span>
+          <span>Transaction Details</span>
+          <span>Testimonials</span>
         </div>
-        <div className="mx-12 dark:text-white text-black">
-          <div>Business Listing</div>
-          <div className="my-2 dark:text-white text-black">Our Team</div>
-          <div>Our partners</div>
+        <div className="dark:text-white text-black flex flex-col  w-[140px] h-[100px]">
+          <span>Business Listing</span>
+          <span>Our Team</span>
+          <span>Our partners</span>
         </div>
-        <div className="mx-12 dark:text-white text-black">
-          <div>Contact Details</div>
-          <div className="my-2 dark:text-white text-black">+805268296</div>
+        <div className="dark:text-white text-black flex flex-col  w-[140px] h-[100px]">
+          <span>Contact Details</span>
+          <p className="ml-4 text-sm">+800 526 8296</p>
+          <span className="h-6"></span>
         </div>
       </footer>
-      <img className="absolute z-0 bottom-0" src={img2} />
+      <img className="absolute z-0 bottom-0" src={img2} alt="" />
     </div>
   );
 };
