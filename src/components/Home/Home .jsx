@@ -40,7 +40,7 @@ function Home() {
             </p>
             <p className="text-[16px] font-[400] my-4 dark:text-white text-black">
               We are world wide investment company who are <br />
-              committed to the principle of revenue maximitization & <br />
+              committed to the principle of revenue <br /> maximitization & 
               reduction of the financial risks at investing.
             </p>
             <button className=" px-16 py-2 border border-white rounded-lg bg-gradient-to-r from-green-300 to-blue-800">
