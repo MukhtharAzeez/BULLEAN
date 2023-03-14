@@ -31,9 +31,9 @@ function Home() {
     <div className="w-full z-40">
       <Header />
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row ">
-        <div className="relative w-full h-[100vh]">
-          <div className=" absolute top-32 left-4 sm:left-12 z-10">
+      <div className="relative flex flex-col md:flex-row ">
+        <div className="mt-32 z-10 ml-8 w-full ">
+          <div className="">
             <p className="text-[61px] font-[500] sm:font-[700] bespoke dark:text-white text-black">
               Build your Future <br /> With Investments
             </p>
@@ -50,15 +50,17 @@ function Home() {
             </p>
           </div>
         </div>
-        <img className="absolute -top-24 left-0" src={leftfade} />
-        <img className="absolute -top-24 left-0 w-full" src={rightfade} />
-        <div className=" z-10 flex justify-center items-center lg:pr-28">
+
+        <img className="absolute -top-24 left-0" src={leftfade} alt=""/>
+        <img className="absolute -top-24 left-0 w-full" src={rightfade} alt=""/>
+        <img className="absolute -top-24 left-0 w-full" src={rightfade} alt=""/>
+        <div className="relative z-10 flex justify-center md:mt-32 lg:pr-28">
           <img src={homeImage} alt="" className="h-[480px] w-[850px]" />
         </div>
       </div>
 
       {/* Why Us */}
-      <div className="text-center flex flex-col items-center ">
+      <div className="text-center flex flex-col items-center mt-24">
         <p className="text-[34px] mb-3 font-semibold bespoke dark:text-white text-black">
           Why us?
         </p>
@@ -129,7 +131,7 @@ function Home() {
           organization, developing new <br /> business models and new
           products.The company is on the cutting edge of new technologies.
         </p>
-        <img className="absolute -top-24 left-0" src={rightfade} />
+        {/* <img className="absolute -top-24 left-0" src={rightfade} /> */}
 
         <div className="w-full flex justify-evenly flex-wrap">
           <div className="mt-16">
@@ -190,7 +192,7 @@ function Home() {
           <img src={p4} />
           <img src={p5} />
         </div>
-        <img className="absolute -top-24 left-0" src={rightfade} />
+        {/* <img className="absolute -top-24 left-0" src={rightfade} /> */}
       </section>
 
       {/* Transaction Details */}

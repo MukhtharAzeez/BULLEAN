@@ -1,8 +1,8 @@
 import React from "react";
 import Supportpage from "../components/Support/Support";
 
-function Support() {
+function Curated() {
   return <Supportpage />;
 }
 
-export default Support;
+export default Curated;

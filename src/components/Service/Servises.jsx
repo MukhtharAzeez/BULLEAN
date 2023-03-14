@@ -7,6 +7,8 @@ import txt2 from "../../images/Consulting.png";
 import txt3 from "../../images/Investment Banking.png";
 import txt4 from "../../images/Investments.png";
 import service from "../../images/service.png";
+import leftfade from "../../images/Ellipse 22.png";
+import rightfade from "../../images/Vector 9.png";
 import './Services.css'
 
 const Services = () => {
@@ -16,9 +18,9 @@ const Services = () => {
     <>
       <div>
         <Header toggle={toggle} setToggle={setToggle} />
-        <div className="bg-gradient-to-r from-teal-100 via-blue-400 to-blue-400 dark:bg-gradient-to-r  dark:from-blue-900 dark:to-teal-800  py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
-          
-          <div className="relative max-w-[400px] p-4 sm:p-0">
+        {/* <div className="bg-gradient-to-r from-teal-100 via-blue-400 to-blue-400 dark:bg-gradient-to-r  dark:from-blue-900 dark:to-teal-800  py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]"> */}
+        <div className="relative py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
+          <div className="relative max-w-[400px] p-4 sm:p-0 z-10">
             <p className="text-[40px] my-4 bespoke font-bold dark:text-white text-black">
               If you are an investor
             </p>
@@ -47,13 +49,16 @@ const Services = () => {
               </button>
             </div>
           </div>
-          <div>
+          <img className="absolute -top-24 left-0" src={leftfade} alt=""/>
+          <img className="absolute -top-24 left-0 w-full" src={rightfade} alt=""/>
+          <img className="absolute -top-24 left-0 w-full" src={rightfade} alt=""/>
+          <div className="z-10">
             <img src={service} alt="" />
           </div>
         </div>
 
         {/* business planning */}
-        <section className="ml-8 flex rounded-l-lg bg-[#BFBFBF] dark:bg-[#171e3e]">
+        <section className="ml-8 flex rounded-l-lg bg-[#BFBFBF] dark:bg-[#171e3e] md:mt-36 z-50">
           <div className="w-full p-6">
             <div className="p-3 rounded-full bg-gradient-to-l from-green-300 to-blue-600 w-fit">
               <img src={bucket} alt="" />

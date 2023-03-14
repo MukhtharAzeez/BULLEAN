@@ -8,13 +8,16 @@ import p5 from "../../images/p5.png";
 import HomeCard from "../Cards/Card1";
 import getInTouch from "../../images/getInTouch.png";
 import Footer from "../Footer/Footer";
+import leftfade from "../../images/Ellipse 22.png";
+import rightfade from "../../images/Vector 9.png";
 
 const Investor = () => {
   return (
     <div className="">
       <Header />
-      <div className="bg-gradient-to-r from-teal-100 via-blue-400 to-blue-400 dark:bg-gradient-to-r  dark:from-blue-900 dark:to-teal-800  py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
-        <div className="relative max-w-[400px] p-4 sm:p-0">
+      {/* <div className="bg-gradient-to-r from-teal-100 via-blue-400 to-blue-400 dark:bg-gradient-to-r  dark:from-blue-900 dark:to-teal-800  py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]"> */}
+      <div className="relative py-32 flex flex-wrap justify-evenly bg-white dark:bg-[#080C23]">
+        <div className="relative max-w-[400px] p-4 sm:p-0 z-10">
           <p className="text-[40px] my-4 bespoke font-bold dark:text-white text-black">
             If You Are Investor
           </p>
@@ -38,12 +41,23 @@ const Investor = () => {
             </button>
           </div>
         </div>
-        <div className="w-[600px]">
+        <img className="absolute -top-24 left-0" src={leftfade} alt="" />
+        <img
+          className="absolute -top-24 left-0 w-full"
+          src={rightfade}
+          alt=""
+        />
+        <img
+          className="absolute -top-24 left-0 w-full"
+          src={rightfade}
+          alt=""
+        />
+        <div className="w-[600px] h-[300px] z-10">
           <img src={getInTouch} alt="" />
         </div>
       </div>
 
-      <div className="p-6 mx-48 mb-20 text-center mt-4 bg-[#bfbfbf53] dark:bg-[#1B2037] border border-slate-700 text-[16px] rounded-lg">
+      <div className="p-6 mx-10 lg:mx-48 mb-20 text-center mt-4 bg-[#bfbfbf53] dark:bg-[#1B2037] border border-slate-700 text-[16px] rounded-lg md:mt-24">
         <p className="text-[25px] my-6 dark:text-white text-black">Benefits</p>
         <p className="dark:text-white text-black">
           * We are 100% funded from our own platform with a team of over 300
@@ -110,7 +124,7 @@ const Investor = () => {
         </div>
       </section>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 };
