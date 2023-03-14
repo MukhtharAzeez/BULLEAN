@@ -28,7 +28,7 @@ function Header({ toggle, setToggle }) {
 
   return (
     <div className="w-full fixed z-50">
-      <div className="w-full flex justify-center pt-8">
+      <div className="w-full flex justify-center pt-6">
         <div className="absolute w-[96vw] z-20 rounded-lg p-5 sm:px-4 bg-[#efefef] dark:bg-[#10194D] text-[10px] sm:text-[16px] flex justify-between items-center">
           <div
             className="w-[90px] sm:w-fit pl-8 dark:text-white text-black text-4xl font-bold"
@@ -253,7 +253,7 @@ function Header({ toggle, setToggle }) {
         <div className="absolute top-0 backdrop-blur-sm z-20 w-full h-[100vh] mb-12 flex justify-center items-center">
           <div className="flex flex-col items-center p-6 bg-white dark:bg-slate-800 rounded-xl">
             <div className="flex gap-24">
-              <p className="text-[26px] ranade mb-8 text-black dark:text-white">
+              <p className="text-[26px] ranade mb-8 text-black dark:text-white ml-24">
                 Raise Capital / Sell Business
               </p>
 

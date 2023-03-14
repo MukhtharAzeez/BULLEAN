@@ -2,7 +2,7 @@ import React from "react";
 import tatalogo from "../../images/Tata-Group-logo-3840x2160 3.png";
 const Card2 = () => {
   return (
-    <div className="w-[250px] p-2 rounded-xl  bg-[#BFBFBF] dark:bg-slate-700 text-start">
+    <div className="max-w-[340px] py-8 p-2 rounded-xl  bg-[#BFBFBF] dark:bg-slate-700 text-start">
       <img src={tatalogo} />
       <p className="text-[18px] font-semibold dark:text-white text-black">
         Tata Capital Housing Finance Ltd
