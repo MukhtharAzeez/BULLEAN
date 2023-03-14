@@ -107,14 +107,15 @@ const Investor = () => {
           products.The company is on the cutting edge of new technologies.
         </p>
 
-        <div className="container mx-auto">
-          <div className="flex items-center justify-center w-full h-full py-24 sm:py-8 px-4">
-            <div>
+        <div className="container mx-auto mt-4">
+          <div className="flex items-center justify-center w-full h-full">
+            <div className="w-10/12 sm:w-11/12 md:w-10/12">
               <Carousel
                 cols={3}
                 rows={1}
                 showDots={true}
                 scrollSnap={true}
+                gap={10}
                 loop
               >
                 <Carousel.Item>
